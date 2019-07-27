@@ -1,0 +1,19 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "pinky-master-20190727100240-authRole",
+            "UnauthRoleArn": "arn:aws:iam::860867269765:role/pinky-master-20190727100240-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::860867269765:role/pinky-master-20190727100240-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "pinky-master-20190727100240-deployment",
+            "UnauthRoleName": "pinky-master-20190727100240-unauthRole",
+            "StackName": "pinky-master-20190727100240",
+            "StackId": "arn:aws:cloudformation:us-east-1:860867269765:stack/pinky-master-20190727100240/32caa950-b077-11e9-be62-120fc18a2440"
+        },
+        "categories": {
+            "auth": {
+                "pinky85bccb95": {}
+            }
+        }
+    }
+}

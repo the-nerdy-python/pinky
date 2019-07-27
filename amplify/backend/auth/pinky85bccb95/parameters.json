@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "pinky85bccb95_identitypool_85bccb95",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "pinky8_85bccb95_lambda_log_policy",
+    "openIdLambdaRoleName": "pinky8_85bccb95_openid_lambda_role",
+    "openIdRolePolicy": "pinky8_85bccb95_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "pinky8_85bccb95_openid_lambda_iam_policy",
+    "openIdLogPolicy": "pinky8_85bccb95_openid_lambda_log_policy",
+    "userPoolName": "pinky85bccb95_userpool_85bccb95",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "pinky885bccb95_sns-role",
+    "roleExternalId": "pinky885bccb95_role_external_id",
+    "policyName": "pinky885bccb95-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "pinky885bccb95_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "pinky885bccb95_totp_lambda_role",
+    "mfaLambdaLogPolicy": "pinky885bccb95_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "pinky885bccb95_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "pinky885bccb95_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "pinky885bccb95_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "pinky885bccb95_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "pinky885bccb95_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "pinky85bccb95",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}

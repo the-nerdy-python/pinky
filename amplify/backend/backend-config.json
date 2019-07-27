@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"pinky85bccb95": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
