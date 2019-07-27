@@ -4,8 +4,8 @@
 export const getRat = `query GetRat($id: ID!) {
   getRat(id: $id) {
     id
-    name
-    description
+    sex
+    status
   }
 }
 `;
@@ -13,8 +13,8 @@ export const listRats = `query ListRats($filter: ModelRatFilterInput, $limit: In
   listRats(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
-      name
-      description
+      sex
+      status
     }
     nextToken
   }

@@ -1,5 +1,24 @@
 type Rat @model @auth(rules: [{ allow: owner }]) {
   id: ID!
-  name: String!
-  description: String
+  sex: String!
+  status: RatStatus!
+  size: RatSize!
+}
+
+enum RatStatus {
+  alive
+  frozen
+  breeder
+}
+
+enum RatSize {
+  pinky
+  fuzzy
+  pup
+  weaned
+  small
+  medium
+  large
+  x-large
+  breeder
 }

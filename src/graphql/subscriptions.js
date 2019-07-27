@@ -4,24 +4,24 @@
 export const onCreateRat = `subscription OnCreateRat {
   onCreateRat {
     id
-    name
-    description
+    sex
+    status
   }
 }
 `;
 export const onUpdateRat = `subscription OnUpdateRat {
   onUpdateRat {
     id
-    name
-    description
+    sex
+    status
   }
 }
 `;
 export const onDeleteRat = `subscription OnDeleteRat {
   onDeleteRat {
     id
-    name
-    description
+    sex
+    status
   }
 }
 `;
