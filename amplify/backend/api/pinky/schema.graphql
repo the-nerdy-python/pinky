@@ -3,6 +3,15 @@ type Rat @model @auth(rules: [{ allow: owner }]) {
   sex: String!
   status: RatStatus!
   size: RatSize!
+  bornDate: AWSDate
+  tub: Int!
+}
+
+type Litter @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  count: Int!
+  date: AWSDate
+  tub: Int!
 }
 
 type Expense @model @auth(rules: [{ allow: owner }]) {
