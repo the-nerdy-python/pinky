@@ -7,17 +7,12 @@ type Rat @model @auth(rules: [{ allow: owner }]) {
 
 type Expense @model @auth(rules: [{ allow: owner }]) {
   id: ID!
-  expenseItems: ExpenseItems!
+  expense: String!
+  description: String
   price: Int
   purchaseDate: AWSDate
 }
 
-enum ExpenseItems {
-  bedding
-  pine bedding
-  food
-  water bottle
-}
 
 enum RatStatus {
   alive
