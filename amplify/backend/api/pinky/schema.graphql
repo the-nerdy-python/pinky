@@ -1,0 +1,41 @@
+type Rat @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  sex: String!
+  status: RatStatus!
+  size: RatSize!
+  bornDate: AWSDate
+  tub: Int!
+}
+
+type Litter @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  count: Int!
+  date: AWSDate
+  tub: Int!
+}
+
+type Expense @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  expense: String!
+  description: String
+  price: Int
+  purchaseDate: AWSDate
+}
+
+
+enum RatStatus {
+  alive
+  frozen
+  breeder
+}
+
+enum RatSize {
+  pinky
+  fuzzy
+  pup
+  weaned
+  small
+  medium
+  large
+  breeder
+}
