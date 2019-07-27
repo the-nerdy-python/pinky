@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "pinky",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authpinky85bccb95",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
