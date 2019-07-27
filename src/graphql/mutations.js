@@ -6,6 +6,7 @@ export const createRat = `mutation CreateRat($input: CreateRatInput!) {
     id
     sex
     status
+    size
   }
 }
 `;
@@ -14,6 +15,7 @@ export const updateRat = `mutation UpdateRat($input: UpdateRatInput!) {
     id
     sex
     status
+    size
   }
 }
 `;
@@ -22,6 +24,7 @@ export const deleteRat = `mutation DeleteRat($input: DeleteRatInput!) {
     id
     sex
     status
+    size
   }
 }
 `;

@@ -6,6 +6,7 @@ export const getRat = `query GetRat($id: ID!) {
     id
     sex
     status
+    size
   }
 }
 `;
@@ -15,6 +16,7 @@ export const listRats = `query ListRats($filter: ModelRatFilterInput, $limit: In
       id
       sex
       status
+      size
     }
     nextToken
   }

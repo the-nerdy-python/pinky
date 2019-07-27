@@ -5,6 +5,20 @@ type Rat @model @auth(rules: [{ allow: owner }]) {
   size: RatSize!
 }
 
+type Expense @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  expenseItems: ExpenseItems!
+  price: Int
+  purchaseDate: AWSDate
+}
+
+enum ExpenseItems {
+  bedding
+  pine bedding
+  food
+  water bottle
+}
+
 enum RatStatus {
   alive
   frozen
@@ -19,6 +33,5 @@ enum RatSize {
   small
   medium
   large
-  x-large
   breeder
 }

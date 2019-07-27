@@ -6,6 +6,7 @@ export const onCreateRat = `subscription OnCreateRat {
     id
     sex
     status
+    size
   }
 }
 `;
@@ -14,6 +15,7 @@ export const onUpdateRat = `subscription OnUpdateRat {
     id
     sex
     status
+    size
   }
 }
 `;
@@ -22,6 +24,7 @@ export const onDeleteRat = `subscription OnDeleteRat {
     id
     sex
     status
+    size
   }
 }
 `;
