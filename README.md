@@ -21,9 +21,46 @@ $ yarn install
 $ yarn global add @aws-amplify/cli
 
 $ amplify init
-
-more here soon about adding api services and such.
 ```
+
+You can say no here and enter a name, I use the name of my branches to keep different versions in AWS that match the corresponding branch.
+
+```
+Note: It is recommended to run this command from the root of your app directory
+? Do you want to use an existing environment? No
+? Enter a name for the environment develop
+Using default provider  awscloudformation
+
+For more information on AWS Profiles, see:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
+
+? Do you want to use an AWS profile? Yes
+? Please choose the profile you want to use default
+```
+
+Now we can push the services from the project into our AWS amplify account
+
+```
+$ amplify push
+
+Current Environment: develop
+
+| Category | Resource name | Operation | Provider plugin   |
+| -------- | ------------- | --------- | ----------------- |
+| Auth     | pinky85bccb95 | Create    | awscloudformation |
+| Api      | pinky         | Create    | awscloudformation |
+? Are you sure you want to continue? (Y/n) Y
+
+GraphQL schema compiled successfully.
+Edit your schema at pinky/amplify/backend/api/pinky/schema.graphql or place .graphql files in a directory at pinky/amplify/backend/api/pinky/schema
+? Do you want to generate code for your newly created GraphQL API Yes
+? Choose the code generation language target javascript
+? Enter the file name pattern of graphql queries, mutations and subscriptions src/graphql/**/*.js
+? Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions Yes
+? Enter maximum statement depth [increase from default if your schema is deeply nested] 2
+```
+
+When complete it will give you a link to the graphQL endpoint which can also be found in the AWS console at https://console.aws.amazon.com/appsync
 
 3. Start the project
 
