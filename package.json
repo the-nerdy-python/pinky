@@ -5,8 +5,10 @@
   "dependencies": {
     "aws-amplify": "^1.1.32",
     "aws-amplify-react": "^2.3.11",
+    "bootstrap-4-react": "^0.0.59",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
