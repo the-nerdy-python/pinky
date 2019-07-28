@@ -5,6 +5,12 @@ import './App.css';
 
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
+import { API, graphqlOperation } from 'aws-amplify';
+
+import * as mutations from "./graphql/mutations";
+import * as queries from "./graphql/queries";
+import * as subscriptions from "./graphql/subscriptions";
+
 
 Amplify.configure(aws_exports);
 
