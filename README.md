@@ -5,6 +5,10 @@ Named after the show I used to love watching as a kid Pinky and the Brain and be
 
 ![Pinky Logo](pinky.png)
 
+# Deploy To Amplify Easy Button
+
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/the-nerdy-python/pinky.git)
+
 ## Getting Started
 
 1. Clone project and install dependencies
